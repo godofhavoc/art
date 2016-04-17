@@ -3,3 +3,4 @@ from general.models import *
 
 # Register your models here.
 admin.site.register(artists)
+admin.site.register(items)
