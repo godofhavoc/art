@@ -1,0 +1,124 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+{% block main_content %}
+<div class="row">
+    <div class="col-md-12 gallery">
+        <div class="pull-right">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a id="upcoming" href="javascript:;">UPCOMING</a>
+                </li>
+                <li>
+                    <a id="previous" href="javascript:;">PREVIOUS</a>
+                </li>
+                <li>
+                    <a id="current" href="javascript:;">CURRENT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-12 upcoming_exhibition">
+
+            <div class="text-center">
+                <p class="headings">UPCOMING EXHIBITION</p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-white">
+                  <div class="panel-body">
+                    <div class="exhibition_box">
+                        <img src="{% static 'exhibition/exhibition2.jpg' %}">
+                        <div class="text-center">
+                            <p>
+                                photography credits: VASUDHA THOZHUR<br/>
+                                <strong style="font-size: 16px;">Message to Zero, The Guild, Delhi, Amitabh Kumar</strong>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-white">
+                  <div class="panel-body">
+                    <div class="exhibition_box">
+                        <img src="{% static 'exhibition/exhibition1.jpg' %}">
+                        <div class="text-center">
+                            <p>
+                                <strong style="font-size: 16px;">St+art festival, Delhi</strong>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 previous_exhibition" style="display: none;">
+
+            <div class="text-center">
+                <p class="headings">PREVIOUS EXHIBITION</p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-white">
+                  <div class="panel-body">
+                    <div class="exhibition_box">
+                        <img src="{% static 'exhibition/exhibition3.jpg' %}">
+                        <div class="text-center">
+                            <p>
+                                photography credits : Nidheesh M K<br/>
+                                <strong style="font-size: 16px;">Treasure Hunt, Delhi, Guesswho</strong>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-white">
+                  <div class="panel-body">
+                    <div class="exhibition_box">
+                        <img src="{% static 'exhibition/exhibition4.jpg' %}">
+                        <div class="text-center">
+                            <p>
+                                photography credits : Indranil Mukherjee<br/>
+                                <strong style="font-size: 16px;">Wall of fame, Delhi, Ranjit Dahiya</strong>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 current_exhibition" style="display: none;">
+
+            <div class="text-center">
+                <p class="headings">CURRENT EXHIBITION</p>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-white">
+                  <div class="panel-body">
+                    <div class="exhibition_box">
+                        <img src="{% static 'exhibition/exhibition5.jpg' %}">
+                        <div class="text-center">
+                            <p>
+                                photography credits : Subuhi Parvez<br/>
+                                <strong style="font-size: 16px;">A &shy;knitting cat, Delhi, Anpu Varkey</strong>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

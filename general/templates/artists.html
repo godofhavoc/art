@@ -1,0 +1,20 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+{% block main_content %}
+
+<div class="row">
+    <div class="col-md-12">
+        {% for artist in artists %}
+            <div class="col-md-3">
+                <div class="artist_box">
+                    <img src="{{ artist.artist_pic.url }}">
+                    <h3>{{ artist.name }}</h3>
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

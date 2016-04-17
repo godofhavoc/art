@@ -1,0 +1,85 @@
+{% extends 'base_template.html' %}
+{% load staticfiles %}
+
+{% block main_content %}
+<div class="row">
+    <div class="col-md-12 space_page">
+
+        <div class="col-md-6">
+            <p>
+                <strong>Fifth Wall</strong> is an exclusive gallery devoted only to street art. Well curated space is available for events,
+
+                exhibitions and for work space. Spanning accross 7000 square feet, its located under Raja Garden fly
+
+                over at King’s Park Street.<br/><br/>
+
+                The space is available on rent for both daily and weekly usage and its perfect  to host any kind of
+
+                events or exhibitions.
+                <ul>
+                    <li>
+                        Gallery is open from 10am to 7pm.
+                    </li>
+                    <li>
+                        Artists can rent paints and other tools.
+                    </li>
+                </ul>
+            </p>
+
+            <div class="address_table">
+                <div class="address_row">
+                    <span class="glyphicon glyphicon-map-marker address_icons"></span>
+                    <p class="address_details">
+                        DTTDC, Under Flyover Facility,<br/>
+                        Raja Garden Crossing Ring Road ,<br/>
+                        New Delhi – 110015
+                    </p>
+                </div>
+                <div class="address_row">
+                    <span class="glyphicon glyphicon-earphone address_icons"></span>
+                    <p class="address_details">
+                        08826836900
+                    </p>
+                </div>
+                <div class="address_row">
+                    <span class="glyphicon glyphicon-envelope address_icons"></span>
+                    <p class="address_details">
+                        info@fifthwall.com<br/>
+                        admin@fifthwall.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="text-center">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="headings" id="aboutus_heading">CONTACT US</p>
+                    <form role="form">
+                        <div class="contact_table">
+                            <div class="contact_row">
+                                <span class="glyphicon glyphicon-user contact_icons"></span>
+                                <input class="contact_details" type="text" placeholder="Your Name">
+                            </div>
+                            <div class="contact_row">
+                                <span class="glyphicon glyphicon-envelope contact_icons"></span>
+                                <input class="contact_details" type="email" placeholder="Your Emai Address">
+                            </div>
+                            <div class="contact_row">
+                                <span class="glyphicon glyphicon-phone contact_icons"></span>
+                                <input class="contact_details" type="text" placeholder="Your Mobile">
+                            </div>
+                            <div class="contact_row">
+                                <span class="glyphicon glyphicon-pencil contact_icons"></span>
+                                <textarea rows="3" class="contact_details" type="text" placeholder="   Your Message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default contact_send_button">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
