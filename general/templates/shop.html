@@ -7,15 +7,123 @@
         <div class="pull-right">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="javascript:;">PRINT</a>
+                    <a id="print" href="javascript:;">PRINT</a>
                 </li>
                 <li>
-                    <a href="javascript:;">CLOTHING</a>
+                    <a id="clothing" href="javascript:;">CLOTHING</a>
                 </li>
                 <li>
-                    <a href="javascript:;">ART</a>
+                    <a id="art" href="javascript:;">ART</a>
                 </li>
             </ul>
+        </div>
+
+        <div class="col-md-12 shop_print">
+            {% for item in items_print %}
+                <div class="col-md-4">
+                    <div class="panel panel-white">
+                      <div class="panel-body">
+                        <div class="item_box">
+                            <img src="{{ item.item_pic.url }}">
+                            <div class="text-center">
+                                <p>
+                                    {{ item.item_description }}<br/>
+                                    <strong>{{ item.name }}</strong>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-md-12 shop_clothing" style="display: none;">
+            {% for item in items_clothing %}
+                <div class="col-md-4">
+                    <div class="panel panel-white">
+                      <div class="panel-body">
+                        <div class="item_box">
+                            <img src="{{ item.item_pic.url }}">
+                            <div class="text-center">
+                                <p>
+                                    <strong>{{ item.name }}, Rs, {{ item.item_price }}</strong>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-md-12 shop_art" style="display: none;">
+            {% for item in items_art %}
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                      <div class="panel-body">
+                        <div class="item_box">
+                            <a href="javascript:void;" id="art{{ item.id }}">
+                                <img src="{{ item.item_pic.url }}">
+                            </a>
+                            <div class="text-center">
+                                <p>
+                                    {{ item.item_description }}<br/>
+                                    <strong>{{ item.name }}, {{ item.item_price }}</strong>
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="col-md-12 burning_man" style="display: none;">
+            <div class="col-md-6">
+                <div class="panel panel-white">
+                  <div class="panel-body">
+                      <div class="item_det_box">
+                          <img src="{% static 'images/burn.jpg' %}">
+                      </div>
+                      <div class="item_det_box">
+                          <img src="{% static 'images/burn2.jpg' %}">
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 burning_man_desc">
+                <div class="panel panel-white">
+                  <div class="panel-body">
+                      <div class="text-center">
+                          <p>
+                              Shivo Shiv Suleman
+                          </p>
+                          <h3>BURNING MAN</h3>
+                          <h4>Rs.12000/-</h4>
+                      </div>
+                      <div class="col-md-10 col-md-offset-1">
+                          <ul>
+                              <li>
+                                <strong>Ink on Paper</strong>
+                              </li>
+                              <li>
+                                <strong>290mm x 400m</strong>
+                              </li>
+                              <li>
+                                <strong>by Shivo Shiv Suleman for Burning Man, a guide book, 'What Where When'.</strong>
+                              </li>
+                          </ul>
+
+                          <div class="text-center">
+                              <button type="button" class="btn btn-default" id="add_to_cart">ADD TO CART</button>
+                          </div>
+                      </div>
+
+                  </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

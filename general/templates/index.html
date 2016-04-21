@@ -5,7 +5,20 @@
 
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
-        <img src="{% static 'images/astronauts.jpg' %}" id="homepage_image">
+        <div class="home_slider">
+            <div>
+                <a href="javascript:void" id="home_street_art">
+                    <img src="{% static 'exhibition/exhibition1.jpg' %}">
+                    <h2>ST+ART FESTIVAL</h2>
+                </a>
+            </div>
+            <div>
+                <a href="javascript:void" id="home_wall_of_fame">
+                    <img src="{% static 'exhibition/exhibition4.jpg' %}">
+                    <h2>WALL OF FAME PREVIOUS EXHIBITION</h2>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

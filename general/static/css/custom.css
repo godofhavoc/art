@@ -4,9 +4,10 @@
 }
 body {
     padding-top: 65px;
+    font-family: calibri;
 }
 p.headings {
-    font-family: calibri;
+    font-family: Trajan pro;
     font-size: 48px;
     font-weight: lighter;
 }
@@ -100,4 +101,104 @@ p.headings {
     /*margin: 0px;*/
     padding: 10px 5px;
     margin-bottom: 0px;
+}
+.item_box {
+    height: 400px;
+}
+.item_box img {
+    height: 100%;
+    width: 100%;
+}
+#street_art img {
+    -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+#street_art img:hover {
+    -webkit-filter: grayscale(100%);
+}
+#wall_of_fame img {
+    -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+#wall_of_fame img:hover {
+    -webkit-filter: grayscale(100%);
+}
+#logo_brand {
+    height: 100%;
+}
+.navbar-brand {
+    background-color: white;
+    padding: 0;
+}
+.navbar-brand:hover {
+    background-color: white;
+    padding: 0;
+}
+.exhibition_detail_box {
+    color: black;
+}
+.exhibition_detail_box img{
+    width: 100%;
+    height:300px;
+    padding-top: 40px;
+}
+.home_slider img{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.home_slider h2{
+    position: absolute;
+    color: black;
+    font-size: 38px;
+    border: 3px solid black;
+    bottom: 10px;
+    margin-left: 15px;
+}
+.slick-arrow {
+    color: black;
+}
+.slick-prev:before, .slick-next:before {
+    color:black !important;
+}
+#art7 img {
+    -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+#art7 img:hover {
+    -webkit-filter: grayscale(100%);
+}
+.item_det_box {
+    height: 280px;
+    padding-bottom: 10px;
+}
+.item_det_box img {
+    height: 100%;
+    width: 100%;
+}
+.burning_man_desc h3 {
+    font-size: 42px;
+    padding-bottom: 10px;
+}
+.burning_man_desc h4 {
+    padding-bottom: 10px;
+}
+.burning_man_desc li {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+#add_to_cart {
+    color: white;
+    background-color: black;
+    margin-top: 30px;
+    border-radius: 0px;
 }

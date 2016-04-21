@@ -19,6 +19,16 @@ def artists(request):
 def shop(request):
     context_dict = {}
     context_dict['nbar'] = 'shop'
+
+    items_print = models.items.objects.filter(item_type="print")
+    context_dict['items_print'] = items_print
+
+    items_art = models.items.objects.filter(item_type="art")
+    context_dict['items_art'] = items_art
+
+    items_clothing = models.items.objects.filter(item_type="clothing")
+    context_dict['items_clothing'] = items_clothing
+
     return render(request, 'shop.html', context_dict)
 
 def about(request):

@@ -23,7 +23,10 @@ class artists(models.Model):
 
 class items(models.Model):
     name = models.CharField(max_length=85L, blank=True)
+    item_description = models.CharField(max_length=85L, blank=True)
     item_pic = models.ImageField(upload_to=item_picture_path, blank=True, null=True)
+    item_price = models.IntegerField(null=True, blank=True)
+    item_type = models.CharField(max_length=85L, blank=True)
 
     def __unicode__(self):
 		if self.name:
