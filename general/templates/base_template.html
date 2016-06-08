@@ -17,7 +17,7 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/">
-                        <img alt="Brand" src="{% static 'images/1.png' %}" id="logo_brand">
+                        <img alt="Brand" src="{% static 'images/logo-final.png' %}" id="logo_brand">
                     </a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -76,5 +76,7 @@
         <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
         <script src="{% static 'js/custom.js' %}"></script>
+        <script type="text/javascript" src='{% static "js/chat.js" %}'></script>
+        <script type="text/javascript" src='{% static "js/reconnecting-websocket.min.js" %}'></script>
     </body>
 </html>

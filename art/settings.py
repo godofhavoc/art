@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'general',
+    'debug_toolbar',
+    'channels',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -124,3 +126,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, "general/static")
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'asgi_redis.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
+        },
+        'ROUTING': 'general.routing.channel_routing',
+    },
+}
